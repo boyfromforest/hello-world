@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const double Pi = 3.14;
+const double Pi = 3.14159;
 class Sphere 
 {
 private: 
@@ -30,11 +30,11 @@ public:
 		return Pi * getDiameter();
 	}
 	double getArea() {
-		return 4 * Pi*r*r;
+		return 4 * Pi * r * r;
 	}
 	double getVolume() {
-		int r3 = r * r*r;
-		return 4 * Pi*r3 / 3;
+		int r3 = r * r * r;
+		return 4 * Pi * r3 / 3;
 	}
 
 }; 
