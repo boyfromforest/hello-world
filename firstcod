@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HomeWork1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //a
+            Console.Write("Enter a = ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Your area = {0}", a * a);
+            Console.WriteLine("Your perimetr = {0}", 4 * a);
+            Console.WriteLine("");
+
+            //b
+            Console.WriteLine("Hey, What is your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine("How old are you, {0} ?" , name);
+            int age = Convert.ToInt32(Console.ReadLine());
+            int year = 2019 - age;
+            Console.WriteLine("Nice to meet you, {0}. You were born in {1} year.", name, year);
+            Console.WriteLine("");
+
+            //c
+            double r, l, S, V;
+            Console.Write("Please, enter r = ");
+            r = Convert.ToDouble(Console.ReadLine());
+            l = 2 * Math.PI * r;
+            S = Math.PI * r * r;
+            V = 4 / 3 * Math.PI * r * r * r;
+            Console.WriteLine("Your data: ");
+            Console.WriteLine("Lenght = {0:F2}, Area = {1:F2}, Volume = {2:F2}", l, S, V);
+            Console.ReadKey();
+
+        }
+    }
+}
