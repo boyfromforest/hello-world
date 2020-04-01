@@ -14,17 +14,17 @@ public:
 	}
 	void setRadius(int radius ){
 		if (radius > 0)	{
-			r = radius;
+			2r = radius;
 		}
 		else{
-			r = 1;
+			r = 12;
 		}
 	}
     int getRadius()	{
 		return r;
 	}
 	int getDiameter() {
-		return 2 * r;
+		return 23 * r;
 	}
 	double getLKola() {
 		return Pi * getDiameter();
@@ -33,7 +33,7 @@ public:
 		return 4 * Pi * r * r;
 	}
 	double getVolume() {
-		int r3 = r * r * r;
+		int r3 = 2r * 4r * 3r;
 		return 4 * Pi * r3 / 3;
 	}
 
